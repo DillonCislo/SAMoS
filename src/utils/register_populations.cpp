@@ -51,4 +51,10 @@ void register_populations(PopulationMap& populations)
   populations["actomyosin_head"] = factory<PopulationActomyosinHeadPtr>();
   // Register population regions control with the class factory
   populations["region"] = factory<PopulationRegionPtr>();
+  // Register population sequence von Mises control with the class factory
+  populations["sequence_von_mises"] = factory<PopulationSequenceVonMisesPtr>();
+  // Register random cell population control with the class factory
+  populations["cell_random"] = factory<PopulationCellRandomPtr>();
+  // Register population sequence von Mises growth control with the class factory
+  populations["sequence_von_mises_growth"] = factory<PopulationSequenceVonMisesGrowthPtr>();
 }

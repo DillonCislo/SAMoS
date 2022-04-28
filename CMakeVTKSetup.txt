@@ -29,6 +29,7 @@
 # * 
 # * ************************************************************** 
 
+SET(VTK_DIR "/home/dillon/projects/VTK-9.1.0/VTK-build" CACHE PATH "VTK directory override" FORCE)
 find_package(VTK)
 if(VTK_FOUND)
   include(${VTK_USE_FILE})
